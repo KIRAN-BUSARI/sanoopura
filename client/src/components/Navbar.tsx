@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-20 w-full border-b border-gray-200 bg-white sm:px-[120px] px-[20px]">
+    <header className="sticky top-0 z-20 w-full border-b border-gray-200 sm:px-[120px] px-[20px]">
       <nav className="pt-5 pb-5">
         <div className="flex flex-wrap justify-between items-center">
           <div className="h-[40px] w-[183px] flex justify-center items-center">
@@ -11,7 +11,7 @@ export default function Navbar() {
               <Logo />
             </Link>
           </div>
-          <div className="list-none text-xl">
+          <div className="list-none text-lg hidden sm:block">
             <ul className="flex gap-6">
               <li>
                 <a className="hover:text-secondary" href="#">
@@ -40,6 +40,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
+          <div className="sm:hidden block">. . .</div>
         </div>
       </nav>
     </header>
