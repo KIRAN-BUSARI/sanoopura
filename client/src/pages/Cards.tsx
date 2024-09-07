@@ -36,7 +36,7 @@ const cards: {
 
 const Cards = () => {
   return (
-    <div className="h-[80vh] flex overflow-hidden">
+    <div className="h-screen flex overflow-hidden justify-center items-center">
       {cards.map((card) => (
         <Card
           key={card.id}
