@@ -2,7 +2,7 @@ import heroImg from "../assets/heroDancerImg.png";
 export default function Hero() {
   return (
     // <div className="h-auto pt-20 bg-gradient-to-br from-[#26172E] via-[#34203E] to-[#3D2349]">
-    <div className="h-auto">
+    <div className="h-auto pt-20">
       <div className="grid sm:grid-cols-12 px-4 sm:px-[120px] place-content-between">
         <div className="col-span-7 z-0 justify-center relative overflow-hidden">
           <img
