@@ -74,6 +74,9 @@ module.exports = {
       },
       backgroundImage: {
         "heroImage": "url('/src/assets/mandala.png')"
+      },
+      fontFamily: {
+        poppins: "Poppins, sans-serif",
       }
     },
   },

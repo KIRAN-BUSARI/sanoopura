@@ -1,4 +1,4 @@
-import logo from "../assets/Logo.svg";
+import logo from "/logo.svg";
 const Logo = () => {
   return <img src={logo} className={"image"} alt="Logo" />;
 };
