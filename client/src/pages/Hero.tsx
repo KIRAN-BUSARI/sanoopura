@@ -1,22 +1,23 @@
+import heroImg from "../assets/heroDancerImg.png";
 export default function Hero() {
   return (
     // <div className="h-auto pt-20 bg-gradient-to-br from-[#26172E] via-[#34203E] to-[#3D2349]">
     <div className="h-auto">
       <div className="grid sm:grid-cols-12 px-4 sm:px-[120px] place-content-between">
-        <div className="col-span-8 z-0 justify-center relative overflow-hidden">
+        <div className="col-span-7 z-0 justify-center relative overflow-hidden">
           <img
-            src="/src/assets/heroDancerImg.png"
+            src={heroImg}
             alt="dancer"
             className="h-auto w-auto object-contain -ml-14"
           />
           {/* <div className="absolute -z-10 inset-0 bg-center bg-no-repeat bg-heroImage opacity-20 sm:h-[80vh] h-auto w-auto animate-spin-slow"></div> */}
         </div>
-        <div className="col-span-4 text-white flex flex-col justify-center">
+        <div className="col-span-5 text-white flex flex-col justify-center">
           <p className="text-[32px] leading-[44px] font-light tracking-[-1%] text-[#25272D]">
             Journey through the <br /> beauty of movement <br /> and rhythm
             with...
           </p>
-          <h1 className="text-4xl leading-[72px] tracking-[-3%] font-semibold bg-clip-text bg-gradient-to-tr from-[#593C2E] to-[#C54783] text-transparent">
+          <h1 className="text-5xl leading-[72px] tracking-[-3%] font-semibold bg-clip-text bg-gradient-to-tr from-[#593C2E] to-[#C54783] text-transparent">
             Dr. Archana S Rao
           </h1>
           <p className="text-sm text-[#25272D] leading-[21px] tracking-[-3%]">
