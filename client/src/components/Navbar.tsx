@@ -35,7 +35,7 @@ const navbarItems: { id: string; title: string; link: string }[] = [
 ];
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-20 w-full sm:px-[120px] px-[20px]">
+    <header className="sticky top-0 z-20 w-full sm:px-[120px] px-[20px] bg-white">
       <nav className="pt-5 pb-5">
         <div className="flex flex-wrap justify-between items-center">
           <div className="h-[40px] w-[183px] flex justify-center items-center">
