@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Cards from "./Cards";
 import AboutPage from "./AboutPage";
 import AwardsPage from "./AwardsPage";
+import Performance from "./Performance";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Cards />
       <AboutPage />
       <AwardsPage />
+      <Performance />
     </>
   );
 }
