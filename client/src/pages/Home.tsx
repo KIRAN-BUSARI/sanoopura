@@ -4,6 +4,7 @@ import Cards from "./Cards";
 import AboutPage from "./AboutPage";
 import AwardsPage from "./AwardsPage";
 import Performance from "./Performance";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutPage />
       <AwardsPage />
       <Performance />
+      <Testimonials/>
     </>
   );
 }
