@@ -36,12 +36,10 @@ const awards = [
 ];
 const AwardsPage = () => {
   return (
-    <div className="h-[90vh] flex bg-[#744E6C] justify-center items-center flex-col">
-      <div className="flex flex-col text-white mx-auto top-20 space-y-5">
-        <h1 className="text-4xl font-semibold text-center">
-          Awards & Achievements
-        </h1>
-        <p className="text-base font-normal text-center leading-[22px]">
+    <div className="h-screen flex bg-[#744E6C] justify-center items-center flex-col">
+      <div className="flex flex-col text-white text-center mx-auto space-y-2 mb-5">
+        <h1 className="text-4xl font-semibold">Awards & Achievements</h1>
+        <p className="text-base font-normal leading-[22px]">
           Discover the remarkable achievements and recognition of our Indian
           classical dance artists, who have received prestigious <br /> awards
           and accolades for their exceptional talent and contribution to this

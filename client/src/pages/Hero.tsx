@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     // <div className="h-auto pt-20 bg-gradient-to-br from-[#26172E] via-[#34203E] to-[#3D2349]">
     <div className="h-auto pt-20">
-      <div className="grid sm:grid-cols-12 px-4 sm:px-[120px] place-content-between">
+      <div className="grid sm:grid-cols-12 px-4 sm:px-[120px]">
         <div className="col-span-7 z-0 justify-center relative overflow-hidden">
           <img
             src={heroImg}
@@ -12,8 +12,8 @@ export default function Hero() {
           />
           {/* <div className="absolute -z-10 inset-0 bg-center bg-no-repeat bg-heroImage opacity-20 sm:h-[80vh] h-auto w-auto animate-spin-slow"></div> */}
         </div>
-        <div className="col-span-5 text-white flex flex-col justify-center">
-          <p className="text-[32px] leading-[44px] font-light tracking-[-1%] text-[#25272D]">
+        <div className="col-span-5 text-white flex flex-col justify-center items-end">
+          <p className="text-[32px] leading-[44px] font-light tracking-[-1%] text-[#25272D] mr-24">
             Journey through the <br /> beauty of movement <br /> and rhythm
             with...
           </p>
@@ -24,7 +24,7 @@ export default function Hero() {
             <i>Founder Sanoopura Nrityalaya, Asst Professor In Microbiology</i>
           </p>
           <div className="mt-5">
-            <button className="px-6 py-3 bg-[#744E6C] hover:opacity-90 text-opacity-100 font-medium rounded-full">
+            <button className="px-6 py-3 bg-[#744E6C] hover:opacity-90 text-opacity-100 font-medium rounded-full mr-[100px]">
               Book for Performance & Workshops
             </button>
           </div>

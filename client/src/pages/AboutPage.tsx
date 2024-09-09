@@ -6,7 +6,7 @@ import v4 from "@/assets/v4.png";
 import v5 from "@/assets/v5.png";
 const AboutPage = () => {
   return (
-    <div className="h-[80vh] bg-[#F6F3F6] flex justify-center items-center relative">
+    <div className="h-screen bg-[#F6F3F6] flex justify-center items-center relative">
       <img src={v3} alt="vector3" className="absolute top-0 right-60" />
       <img src={v5} alt="vector5" className="absolute top-0 left-60" />
       <div className="grid grid-cols-2 gap-20 px-20 relative">

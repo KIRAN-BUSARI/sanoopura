@@ -15,7 +15,7 @@ export default function Home() {
       <AboutPage />
       <AwardsPage />
       <Performance />
-      <Testimonials/>
+      <Testimonials />
     </>
   );
 }
