@@ -6,6 +6,7 @@ import AwardsPage from "./AwardsPage";
 import Performance from "./Performance";
 import Testimonials from "./Testimonials";
 import Events from "./Events";
+import EventBanner from "@/components/EventBanner";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Performance />
       <Testimonials />
       <Events />
+      <EventBanner />
     </>
   );
 }
