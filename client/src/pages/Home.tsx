@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage";
 import AwardsPage from "./AwardsPage";
 import Performance from "./Performance";
 import Testimonials from "./Testimonials";
+import Events from "./Events";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <AwardsPage />
       <Performance />
       <Testimonials />
+      <Events />
     </>
   );
 }

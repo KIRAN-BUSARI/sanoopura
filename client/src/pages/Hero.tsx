@@ -13,18 +13,18 @@ export default function Hero() {
           {/* <div className="absolute -z-10 inset-0 bg-center bg-no-repeat bg-heroImage opacity-20 sm:h-[80vh] h-auto w-auto animate-spin-slow"></div> */}
         </div>
         <div className="col-span-5 text-white flex flex-col justify-center items-end">
-          <p className="text-[32px] leading-[44px] font-light tracking-[-1%] text-[#25272D] mr-24">
+          <p className="text-[32px] leading-[44px] font-light tracking-[-1%] text-primary1 mr-24">
             Journey through the <br /> beauty of movement <br /> and rhythm
             with...
           </p>
           <h1 className="text-5xl leading-[72px] tracking-[-3%] font-semibold bg-clip-text bg-gradient-to-tr from-[#593C2E] to-[#C54783] text-transparent">
             Dr. Archana S Rao
           </h1>
-          <p className="text-sm text-[#25272D] leading-[21px] tracking-[-3%]">
+          <p className="text-sm text-primary1 leading-[21px] tracking-[-3%]">
             <i>Founder Sanoopura Nrityalaya, Asst Professor In Microbiology</i>
           </p>
           <div className="mt-5">
-            <button className="px-6 py-3 bg-[#744E6C] hover:opacity-90 text-opacity-100 font-medium rounded-full mr-[100px]">
+            <button className="px-6 py-3 bg-secondary hover:opacity-90 text-opacity-100 font-medium rounded-full mr-[100px]">
               Book for Performance & Workshops
             </button>
           </div>

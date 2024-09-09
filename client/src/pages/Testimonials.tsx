@@ -86,7 +86,7 @@ function Testimonials() {
         </div>
       </div>
 
-      <div className="bg-[#744E6C] h-[245px] text-white mt-[120px]">
+      <div className="bg-secondary h-[245px] text-white mt-[120px]">
         <div className="flex flex-col justify-center items-center h-full w-[920px] mx-auto space-y-4">
           <p className="text-[16px] font-normal leading-[26px]">
             Today I am a dancer largely because of the encouragement and support

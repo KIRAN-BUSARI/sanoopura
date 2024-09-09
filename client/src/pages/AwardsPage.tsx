@@ -36,7 +36,7 @@ const awards = [
 ];
 const AwardsPage = () => {
   return (
-    <div className="h-screen flex bg-[#744E6C] justify-center items-center flex-col">
+    <div className="h-screen flex bg-secondary justify-center items-center flex-col px-[120px]">
       <div className="flex flex-col text-white text-center mx-auto space-y-2 mb-5">
         <h1 className="text-4xl font-semibold">Awards & Achievements</h1>
         <p className="text-base font-normal leading-[22px]">
@@ -46,7 +46,7 @@ const AwardsPage = () => {
           art form
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10 mt-10 mx-20">
+      <div className="grid grid-cols-2 gap-10 mt-10">
         {awards.map((award) => (
           <AwardCard
             key={award.id}

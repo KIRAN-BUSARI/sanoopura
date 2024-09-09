@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -77,10 +77,13 @@ module.exports = {
       },
       fontFamily: {
         poppins: "Poppins, sans-serif",
-      }
+      },
+      textColor: {
+        primary: "#313131",
+        primary1: "#424242",
+        primary2: "#744E6C"
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
-// title 313131
-// body test : 424242
+};
