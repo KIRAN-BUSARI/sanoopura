@@ -36,7 +36,7 @@ const cards: {
 
 const Cards = () => {
   return (
-    <div className="h-screen grid grid-flow-col gap-10 px-[120px] place-content-center">
+    <div className="h-auto py-20 grid sm:grid-flow-col gap-10 sm:px-[120px] px-4 place-content-center">
       {cards.map((card) => (
         <Card
           key={card.id}
