@@ -7,7 +7,7 @@ export default function Hero() {
           <img
             src={heroImg}
             alt="dancer"
-            className="w-full h-auto object-contain -ml-12 sm:-ml-14"
+            className="w-full h-auto object-contain -ml-7 sm:-ml-14"
           />
           <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-5 hidden sm:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
         </div>
