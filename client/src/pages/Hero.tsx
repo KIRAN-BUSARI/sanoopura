@@ -21,8 +21,8 @@ export default function Hero() {
 
         <motion.div
           className="col-span-12 sm:col-span-5 text-white flex flex-col justify-center sm:items-end"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: -0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.p
@@ -55,8 +55,8 @@ export default function Hero() {
 
           <motion.div
             className="mt-5 flex justify-center sm:justify-start"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <motion.button
