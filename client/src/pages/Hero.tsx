@@ -9,7 +9,7 @@ export default function Hero() {
             alt="dancer"
             className="w-full h-auto object-contain -ml-6 sm:-ml-14"
           />
-          <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-25 hidden md:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
+          <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-5 hidden md:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
         </div>
         <div className="col-span-12 sm:col-span-5 text-white flex flex-col justify-center sm:items-end items-start">
           <p className="text-2xl sm:text-[32px] leading-8 sm:leading-[44px] font-light tracking-[-1%] text-primary1 sm:mr-24">
