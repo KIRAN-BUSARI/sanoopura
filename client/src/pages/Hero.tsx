@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import heroImg from "../assets/heroDancerImg.png";
+import Banner from "@/components/Banner";
 
 export default function Hero() {
   return (
     <div className="h-auto sm:pt-20 py-10 sm:py-0">
       <div className="grid sm:grid-cols-12 sm:px-[120px] gap-8">
-        {/* Dancer Image with motion */}
         <motion.div
           className="col-span-12 sm:col-span-7 relative overflow-hidden flex justify-center"
           initial={{ opacity: 0, x: -50 }}
@@ -20,7 +20,6 @@ export default function Hero() {
           <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-5 hidden sm:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
         </motion.div>
 
-        {/* Text Content with staggered motion */}
         <motion.div
           className="col-span-12 sm:col-span-5 text-white flex flex-col justify-center sm:items-end"
           initial={{ opacity: 0, y: 50 }}
@@ -55,7 +54,6 @@ export default function Hero() {
             <i>Founder Sanoopura Nrityalaya, Asst Professor In Microbiology</i>
           </motion.p>
 
-          {/* Button with hover animation */}
           <motion.div
             className="mt-5 flex justify-center sm:justify-start"
             initial={{ opacity: 0, y: 50 }}
@@ -72,6 +70,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
+      <Banner />
     </div>
   );
 }
