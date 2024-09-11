@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-5 hidden sm:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
         </div>
         <div className="col-span-12 sm:col-span-5 text-white flex flex-col justify-center sm:items-end">
-          <p className="text-2xl sm:text-[32px] leading-8 sm:leading-[44px] font-light tracking-[-1%] text-primary1 text-center sm:text-start sm:mr-24">
+          <p className="text-xl sm:text-[32px] leading-8 sm:leading-[44px] font-light tracking-[-1%] text-primary1 text-center sm:text-start sm:mr-24">
             Journey through the <br className="hidden sm:block" /> beauty of
             movement <br className="hidden sm:block" /> and rhythm with...
           </p>
