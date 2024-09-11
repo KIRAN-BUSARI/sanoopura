@@ -3,7 +3,7 @@ import img2 from "@/assets/Frame 85.png";
 
 function Testimonials() {
   return (
-    <section className="h-auto pt-20">
+    <section className="h-auto py-10">
       <div className="text-center flex flex-col space-y-5">
         <h1 className="text-4xl font-semibold">What they have to say</h1>
         <p className="text-[16px] font-normal leading-6">

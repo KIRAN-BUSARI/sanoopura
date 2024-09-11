@@ -1,6 +1,6 @@
 function Performance() {
   return (
-    <section className="h-screen pt-20">
+    <section className="h-auto py-10">
       <div className=" flex flex-col justify-center items-center">
         <div className="text-center flex flex-col space-y-5">
           <h1 className="text-4xl font-semibold">Performance</h1>

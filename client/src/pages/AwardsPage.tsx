@@ -34,19 +34,22 @@
 //     description: "For Dance Drama vevnu visarjane",
 //   },
 // ];
+
 // const AwardsPage = () => {
 //   return (
-//     <div className="h-screen flex bg-secondary justify-center items-center flex-col px-[120px]">
+//     <div className="min-h-screen flex bg-secondary justify-center items-center flex-col px-4 md:px-[120px] py-10">
 //       <div className="flex flex-col text-white text-center mx-auto space-y-2 mb-5">
-//         <h1 className="text-4xl font-semibold">Awards & Achievements</h1>
-//         <p className="text-base font-normal leading-[22px]">
+//         <h1 className="text-2xl md:text-4xl font-semibold">
+//           Awards & Achievements
+//         </h1>
+//         <p className="text-sm md:text-base font-normal leading-[22px]">
 //           Discover the remarkable achievements and recognition of our Indian
-//           classical dance artists, who have received prestigious <br /> awards
-//           and accolades for their exceptional talent and contribution to this
-//           art form
+//           classical dance artists, who have received prestigious{" "}
+//           <br className="hidden md:block" /> awards and accolades for their
+//           exceptional talent and contribution to this art form
 //         </p>
 //       </div>
-//       <div className="grid grid-cols-2 gap-10 mt-10">
+//       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-10 mt-10 w-full">
 //         {awards.map((award) => (
 //           <AwardCard
 //             key={award.id}
@@ -61,6 +64,7 @@
 
 // export default AwardsPage;
 
+import { motion } from "framer-motion";
 import AwardCard from "@/components/AwardCard";
 
 const awards = [
@@ -101,7 +105,13 @@ const awards = [
 const AwardsPage = () => {
   return (
     <div className="min-h-screen flex bg-secondary justify-center items-center flex-col px-4 md:px-[120px] py-10">
-      <div className="flex flex-col text-white text-center mx-auto space-y-2 mb-5">
+      {/* Title and description animation */}
+      <motion.div
+        className="flex flex-col text-white text-center mx-auto space-y-2 mb-5"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1 className="text-2xl md:text-4xl font-semibold">
           Awards & Achievements
         </h1>
@@ -111,16 +121,36 @@ const AwardsPage = () => {
           <br className="hidden md:block" /> awards and accolades for their
           exceptional talent and contribution to this art form
         </p>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-10 mt-10 w-full">
+      </motion.div>
+
+      {/* Awards grid with motion */}
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-10 mt-10 w-full"
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
         {awards.map((award) => (
-          <AwardCard
+          <motion.div
             key={award.id}
-            title={award.title}
-            description={award.description}
-          />
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
+            <AwardCard title={award.title} description={award.description} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

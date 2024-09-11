@@ -69,12 +69,12 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="h-[85vh] items-center flex-col relative px-[120px]">
+    <div className="h-[90vh] items-center flex-col relative px-[120px]">
       <img
         src={eventImg}
         alt="eventImage"
         className="absolute right-0 -z-10"
-        width={440}
+        width={500}
       />
       <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20 mt-20">
         <h1 className="text-4xl font-semibold">Events</h1>
