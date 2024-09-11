@@ -8,11 +8,13 @@ import Events from "./Events";
 import EventBanner from "@/components/EventBanner";
 import Gallery from "./Gallery";
 import Footer from "@/components/Footer";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Banner />
       <Cards />
       <AboutPage />
       <AwardsPage />

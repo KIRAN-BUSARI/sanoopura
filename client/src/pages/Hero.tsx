@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import heroImg from "../assets/heroDancerImg.png";
-import Banner from "@/components/Banner";
 
 export default function Hero() {
   return (
@@ -70,7 +69,6 @@ export default function Hero() {
           </motion.div>
         </motion.div>
       </div>
-      <Banner />
     </div>
   );
 }
