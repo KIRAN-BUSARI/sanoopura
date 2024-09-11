@@ -1,6 +1,6 @@
 function Performance() {
   return (
-    <section className="h-auto py-10">
+    <section className="h-auto py-40">
       <div className=" flex flex-col justify-center items-center">
         <div className="text-center flex flex-col space-y-5">
           <h1 className="text-4xl font-semibold">Performance</h1>
@@ -12,16 +12,6 @@ function Performance() {
         </div>
 
         <div className="md:w-[1000px] md:h-[624px] w-[500px] h-[350px] mt-10 rounded-lg overflow-hidden">
-          {/* <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/fzxBxAoPJZY?si=J4Ll0Wxr6GzFSvdg"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe> */}
           <iframe
             width="100%"
             height="100%"

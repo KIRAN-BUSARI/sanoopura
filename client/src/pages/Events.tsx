@@ -69,14 +69,14 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="h-[90vh] items-center flex-col relative px-[120px]">
+    <div className="h-[90vh] items-center flex-col relative px-[120px] py-10">
       <img
         src={eventImg}
         alt="eventImage"
         className="absolute right-0 -z-10"
         width={500}
       />
-      <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20 mt-20">
+      <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20">
         <h1 className="text-4xl font-semibold">Events</h1>
         <p className="text-base font-normal leading-[22px]">
           Discover the remarkable achievements and recognition of our Indian

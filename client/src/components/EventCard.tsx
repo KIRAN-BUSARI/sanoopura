@@ -11,7 +11,7 @@ const EventCard = ({
     <div className="flex items-center space-x-5 -mt-1 overflow-hidden relative">
       <div
         style={{ backgroundColor: color }}
-        className="h-24 w-2 rounded-xl -mt-1"
+        className="h-24 w-2 rounded-xl shrink-0"
       ></div>
       <div className="flex flex-col">
         <h1 className="text-primary text-xl leading-[30px] font-semibold">

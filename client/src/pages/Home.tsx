@@ -6,6 +6,8 @@ import Performance from "./Performance";
 import Testimonials from "./Testimonials";
 import Events from "./Events";
 import EventBanner from "@/components/EventBanner";
+import Gallery from "./Gallery";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Testimonials />
       <Events />
       <EventBanner />
+      <Gallery />
+      <Footer />
     </>
   );
 }
