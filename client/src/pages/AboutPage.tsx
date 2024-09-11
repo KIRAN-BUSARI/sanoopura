@@ -7,24 +7,24 @@ import v5 from "@/assets/v5.png";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-[#F6F3F6] px-4 md:px-[120px] flex flex-col md:flex-row justify-center items-center relative">
+    <div className="min-h-screen bg-[#F6F3F6] px-4 md:px-[120px] flex flex-col justify-center items-center relative">
       <img
         src={v3}
         alt="vector3"
-        className="absolute top-0 right-10 md:right-60"
+        className="absolute top-0 right-10 md:right-60 w-20 md:w-auto"
       />
       <img
         src={v5}
         alt="vector5"
-        className="absolute top-0 left-10 md:left-60"
+        className="absolute top-0 left-10 md:left-60 w-20 md:w-auto"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 relative w-full">
         <img
           src={v1}
           alt="v1"
-          className="absolute z-10 left-0 -top-[90px] overflow-hidden"
+          className="absolute z-10 left-0 -top-[90px] overflow-hidden w-20 md:w-auto"
         />
-        <div className="flex justify-center items-start flex-col">
+        <div className="flex justify-center items-start flex-col px-4 md:px-0">
           <h1 className="text-[24px] md:text-[36px] font-semibold mb-5 md:mb-10">
             About Me
           </h1>
@@ -49,16 +49,20 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center px-4 md:px-0">
           <img src={abtPageImg} alt="abtpageimage" className="w-full h-auto" />
         </div>
       </div>
       <img
         src={v2}
         alt="v2"
-        className="absolute bottom-0 overflow-hidden left-10 md:left-56"
+        className="absolute bottom-0 overflow-hidden left-10 md:left-56 w-20 md:w-auto"
       />
-      <img src={v4} alt="vector4" className="absolute bottom-0 right-0" />
+      <img
+        src={v4}
+        alt="vector4"
+        className="absolute bottom-0 right-0 w-20 md:w-auto"
+      />
     </div>
   );
 };
