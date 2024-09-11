@@ -41,9 +41,9 @@ const Cards = () => {
       {cards.map((card) => (
         <motion.div
           key={card.id}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: card.id * 0.2 }}
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: card.id * 0.3 }}
         >
           <Card
             imgLink={card.imgLink}

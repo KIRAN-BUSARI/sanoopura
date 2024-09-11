@@ -42,8 +42,8 @@ const AwardsPage = () => {
       {/* Title and description animation */}
       <motion.div
         className="flex flex-col text-white text-center mx-auto space-y-2 mb-5"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
       >
         <h1 className="text-2xl md:text-4xl font-semibold">
@@ -63,12 +63,12 @@ const AwardsPage = () => {
         initial="hidden"
         whileInView="visible"
         variants={{
-          hidden: { opacity: 0, y: 50 },
+          hidden: { opacity: 0, x: -50 },
           visible: {
             opacity: 1,
-            y: 0,
+            x: 0,
             transition: {
-              staggerChildren: 0.2,
+              staggerChildren: 0.3,
             },
           },
         }}
@@ -77,8 +77,8 @@ const AwardsPage = () => {
           <motion.div
             key={award.id}
             variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
             }}
           >
             <AwardCard title={award.title} description={award.description} />
