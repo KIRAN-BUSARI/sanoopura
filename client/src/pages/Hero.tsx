@@ -16,7 +16,7 @@ export default function Hero() {
             alt="dancer"
             className="w-full h-auto object-contain -ml-7 sm:-ml-14"
           />
-          <div className="absolute inset-0 bg-center bg-no-repeat bg-heroImage opacity-5 hidden sm:block lg:h-[80vh] sm:h-screen h-auto w-auto animate-spin-slow -z-10"></div>
+          <div className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-heroImage opacity-5 sm:h-[50vh] lg:h-[80vh] w-full animate-spin-slow -z-10"></div>
         </motion.div>
 
         <motion.div

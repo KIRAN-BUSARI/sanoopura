@@ -66,18 +66,18 @@ const images = [
 function Gallery() {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center mt-40 px-[120px]">
+      <div className=" flex flex-col justify-center items-center mt-20 md:mt-40 px-4 md:px-[120px]">
         <div className="text-center flex flex-col space-y-5">
-          <h1 className="text-4xl font-semibold">Gallery</h1>
-          <p className="text-[16px] font-normal leading-6">
+          <h1 className="text-2xl md:text-4xl font-semibold">Gallery</h1>
+          <p className="text-sm md:text-base font-normal md:leading-6">
             Honors for notable accomplishments, recognition of excellence in a
             field, and milestones in personal or professional growth.
           </p>
         </div>
       </div>
 
-      <div className="mt-16 flex items-center justify-center px-[120px]">
-        <div className="grid grid-cols-4 gap-12">
+      <div className="mt-16 flex items-center justify-center md:px-[120px]">
+        <div className="md:grid md:grid-cols-4 md:gap-12 space-y-8 md:space-y-0">
           {images.map((image) => (
             <GalleryCard img={image.img} />
           ))}

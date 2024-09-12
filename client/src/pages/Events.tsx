@@ -73,7 +73,7 @@ const Events = () => {
       <img
         src={eventImg}
         alt="eventImage"
-        className="absolute right-0 md:-z-10 opacity-45 top-[600px] md:top-0"
+        className="absolute right-0 md:-z-10 opacity-45 md:opacity-100 top-[600px] md:top-0"
         width={500}
       />
       <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20">

@@ -92,7 +92,7 @@ function Testimonials() {
         <div className="flex flex-col justify-center items-center h-full md:w-[920px] mx-auto space-y-4 text-center">
           <p className="md:text-[16px] font-normal md:leading-[26px] p-2 md:p-0">
             Today I am a dancer largely because of the encouragement and support
-            of Doddamma (K V Jamuna) and in my pursuit of dance, many have
+            of Doddamma <br className="md:hidden" /> (K V Jamuna) and in my pursuit of dance, many have
             guided me and many more have stood by me. Especially my Gurus have
             filled life to my dreams of becoming a Bharathanatyam dancer. I owe
             each one of them my heartfelt Pranams and gratitude.

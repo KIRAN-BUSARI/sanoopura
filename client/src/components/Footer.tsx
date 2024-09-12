@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[252px] bg-secondary text-white mt-40 px-[120px]">
-      <div className="flex justify-between items-center h-full">
-        <div className="flex space-x-5">
+    <div className="w-full h-[320px] bg-secondary text-white mt-20 md:mt-40 px-4 md:px-[120px]">
+      <div className="flex md:justify-between md:items-center md:h-full flex-col-reverse md:flex-row">
+        <div className="flex space-x-5 pt-5 md:pt-0">
           <Link to={"/"}>
             <img src={facebook_logo} alt="" />
           </Link>
@@ -27,13 +27,13 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-8 pt-8 md:pt-0">
           <div className="space-y-1">
-            <h1 className="text-[36px] font-semibold">SANOOPURA NRITYALAYA</h1>
-            <p className="text-[16px] font-normal">
-              No 341 Sai Sparsh 2nd Floor, 8th Main Rd, JHCS Layout,
-              <br />
-              Uttarahalli Hobli, Bengaluru, Karnataka 560061.
+            <h1 className="text-2xl md:text-[36px] font-semibold">SANOOPURA NRITYALAYA</h1>
+            <p className="text-sm md:text-base font-normal">
+              No 341 Sai Sparsh 2nd Floor, 8th Main Rd,<br className="md:hidden" /> JHCS Layout,
+              <br className="hidden md:block" />
+              Uttarahalli Hobli, Bengaluru,<br className="md:hidden" /> Karnataka 560061.
             </p>
           </div>
 

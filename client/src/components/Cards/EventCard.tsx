@@ -8,7 +8,7 @@ const EventCard = ({
   description: string;
 }) => {
   return (
-    <div className="flex items-center space-x-5 -mt-1 overflow-hidden relative">
+    <div className="flex items-center space-x-5 md:-mt-1 overflow-hidden relative">
       <div
         style={{ backgroundColor: color }}
         className="h-24 w-2 rounded-xl shrink-0"
