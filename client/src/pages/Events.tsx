@@ -71,14 +71,11 @@ const events = [
 const Events = () => {
   return (
     <div className="h-auto items-center flex-col relative px-4 md:px-[60px] lg:px-[120px] py-10">
-      <motion.img
+
+      <img
         src={eventImg}
         alt="eventImage"
-        className="absolute right-0 -z-10 hidden md:block"
-        width={300} // Adjusted width for smaller screens
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
+        className="absolute right-0 -z-10 opacity-45 md:opacity-100 top-[550px] md:top-32 w-[300px]"
       />
 
       <motion.div
