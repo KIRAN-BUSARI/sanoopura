@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Card from "@/components/Card";
+import Card from "@/components/Cards/Card";
 import cardImg from "@/assets/CardImg.png";
 
 const cards: {

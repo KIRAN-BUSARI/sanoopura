@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import AwardCard from "@/components/AwardCard";
+import AwardCard from "@/components/Cards/AwardCard";
 
 const awards = [
   {

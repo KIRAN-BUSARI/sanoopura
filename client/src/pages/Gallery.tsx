@@ -10,7 +10,7 @@ import img9 from "@/assets/Frame 83.png";
 import img10 from "@/assets/Frame 88.png";
 import img11 from "@/assets/Frame 86.png";
 import img12 from "@/assets/Frame 87.png";
-import GalleryCard from "@/components/GalleryCard";
+import GalleryCard from "@/components/Cards/GalleryCard";
 
 const images = [
   {
