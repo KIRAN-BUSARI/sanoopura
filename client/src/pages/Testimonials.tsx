@@ -69,7 +69,6 @@ function Testimonials() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
         >
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12">
             <div>
