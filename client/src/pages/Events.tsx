@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import eventImg from "@/assets/EventPageImage.png";
 import EventCard from "@/components/Cards/EventCard";
 
@@ -69,32 +70,62 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="h-auto items-center flex-col relative px-4 md:px-[120px] md:py-40 py-20">
-      <img
+    <div className="h-auto items-center flex-col relative px-4 md:px-[60px] lg:px-[120px] py-10">
+      <motion.img
         src={eventImg}
         alt="eventImage"
-        className="absolute right-0 md:-z-10 opacity-45 md:opacity-100 top-[600px] md:top-0"
-        width={500}
+        className="absolute right-0 -z-10 hidden md:block"
+        width={300} // Adjusted width for smaller screens
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
       />
-      <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20">
+
+      <motion.div
+        className="flex flex-col text-primary text-center mx-auto space-y-2 mb-10 md:mb-20"
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <h1 className="text-2xl md:text-4xl font-semibold">Events</h1>
-        <p className="text-sm md:text-base font-normal md:leading-[22px]">
+        <p className="text-sm md:text-base font-normal leading-[22px]">
           Discover the remarkable achievements and recognition of our Indian
           classical dance artists, who have received prestigious <br /> awards
           and accolades for their exceptional talent and contribution to this
-          art form
+          art form.
         </p>
-      </div>
-      <div className="md:grid md:grid-cols-2 space-y-5 md:space-y-0">
+      </motion.div>
+
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2"
+        initial="hidden"
+        whileInView="visible"
+        variants={{
+          hidden: { opacity: 0, x: -100 },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: { staggerChildren: 0.2 },
+          },
+        }}
+      >
         {events.map((event) => (
-          <EventCard
+          <motion.div
             key={event.id}
-            color={event.color}
-            title={event.title}
-            description={event.description}
-          />
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            transition={{ duration: 0.8 }}
+          >
+            <EventCard
+              color={event.color}
+              title={event.title}
+              description={event.description}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

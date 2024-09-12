@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import img1 from "@/assets/Frame 77.png";
 import img2 from "@/assets/Frame 74.png";
 import img3 from "@/assets/Frame 78.png";
@@ -66,7 +67,7 @@ const images = [
 function Gallery() {
   return (
     <>
-      <div className=" flex flex-col justify-center items-center mt-20 md:mt-40 px-4 md:px-[120px]">
+      <div className="flex flex-col justify-center items-center mt-10 md:mt-20 px-4 md:px-[120px]">
         <div className="text-center flex flex-col space-y-5">
           <h1 className="text-2xl md:text-4xl font-semibold">Gallery</h1>
           <p className="text-sm md:text-base font-normal md:leading-6">
@@ -76,12 +77,33 @@ function Gallery() {
         </div>
       </div>
 
-      <div className="mt-16 flex items-center justify-center md:px-[120px]">
-        <div className="md:grid md:grid-cols-4 md:gap-12 space-y-8 md:space-y-0">
+      <div className="mt-12 md:mt-16 flex items-center justify-center px-4 md:px-[120px]">
+        <motion.div
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8"
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: { staggerChildren: 0.2 },
+            },
+          }}
+        >
           {images.map((image) => (
-            <GalleryCard img={image.img} />
+            <motion.div
+              key={image.id}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              transition={{ duration: 0.6 }}
+            >
+              <GalleryCard img={image.img} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );

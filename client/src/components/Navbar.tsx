@@ -49,7 +49,7 @@ export default function Navbar() {
             <Logo />
           </Link>
 
-          <button className="md:hidden relative" onClick={handleClick}>
+          <button className="md:hidden relative -mr-2" onClick={handleClick}>
             {isOpen ? (
               <CgClose className="text-2xl" />
             ) : (

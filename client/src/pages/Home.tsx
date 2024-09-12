@@ -9,6 +9,7 @@ import EventBanner from "@/components/EventBanner";
 import Gallery from "./Gallery";
 import Footer from "@/components/Footer";
 import Banner from "@/components/Banner";
+import TestimonalBanner from "@/components/TestimonalBanner";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <AwardsPage />
       <Performance />
       <Testimonials />
+      <TestimonalBanner />
       <Events />
       <EventBanner />
       <Gallery />
