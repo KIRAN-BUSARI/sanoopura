@@ -69,23 +69,23 @@ const events = [
 
 const Events = () => {
   return (
-    <div className="h-[90vh] items-center flex-col relative px-[120px] py-10">
+    <div className="h-auto items-center flex-col relative px-4 md:px-[120px] md:py-40 py-20">
       <img
         src={eventImg}
         alt="eventImage"
-        className="absolute right-0 -z-10"
+        className="absolute right-0 md:-z-10 opacity-45 top-[600px] md:top-0"
         width={500}
       />
       <div className="flex flex-col text-primary text-center mx-auto space-y-2 mb-20">
-        <h1 className="text-4xl font-semibold">Events</h1>
-        <p className="text-base font-normal leading-[22px]">
+        <h1 className="text-2xl md:text-4xl font-semibold">Events</h1>
+        <p className="text-sm md:text-base font-normal md:leading-[22px]">
           Discover the remarkable achievements and recognition of our Indian
           classical dance artists, who have received prestigious <br /> awards
           and accolades for their exceptional talent and contribution to this
           art form
         </p>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="md:grid md:grid-cols-2 space-y-5 md:space-y-0">
         {events.map((event) => (
           <EventCard
             key={event.id}

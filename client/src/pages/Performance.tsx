@@ -1,17 +1,17 @@
 function Performance() {
   return (
-    <section className="h-auto py-40">
+    <section className="h-auto py-10 md:py-40 px-4 md:px-[120px]">
       <div className=" flex flex-col justify-center items-center">
         <div className="text-center flex flex-col space-y-5">
-          <h1 className="text-4xl font-semibold">Performance</h1>
-          <p className="text-[16px] font-normal leading-6">
+          <h1 className="text-2xl md:text-4xl font-semibold">Performance</h1>
+          <p className="text-sm md:text-[16px] font-normal md:leading-6">
             Exploring the grace, rhythm, and storytelling traditions of Indian
             classical dance through <br /> captivating movements, intricate
             footwork, and emotive expressions.
           </p>
         </div>
 
-        <div className="md:w-[1000px] md:h-[624px] w-[500px] h-[350px] mt-10 rounded-lg overflow-hidden">
+        <div className="md:w-[1000px] md:h-[624px] w-[350px] h-[250px] mt-10 rounded-lg overflow-hidden">
           <iframe
             width="100%"
             height="100%"
