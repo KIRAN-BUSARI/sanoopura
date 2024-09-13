@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { useState } from "react";
 import { CgClose, CgMenuRight } from "react-icons/cg";
@@ -65,9 +64,9 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 w-full bg-white">
       <nav className="px-4 md:px-[120px] lg:ml-0 lg:mr-0">
         <div className="flex py-[10px] justify-between items-center w-full">
-          <Link to={"/"}>
+          <a href={"/"}>
             <Logo />
-          </Link>
+          </a>
 
           <button className="md:hidden relative -mr-2" onClick={handleClick}>
             {isOpen ? (
@@ -81,17 +80,17 @@ export default function Navbar() {
             <>
               <div className="md:hidden w-full fixed right-0 font-semibold">
                 <div className="h-48 mt-5 text-end absolute flex flex-col items-end w-full">
-                  <div className="list-none text-base block px-5 py-5 md:hidden">
+                  <div className="list-none text-base block px-5 bg-white py-5 md:hidden">
                     <ul className="flex gap-5 flex-col mr-5">
                       {navbarItems.map((item) => (
                         <li key={item.id} className="capitalize">
-                          <Link
-                            to={item.link}
+                          <a
+                            href={item.link}
                             onClick={() => handleLinkClick(item.name || "")}
                             className={linkClasses(item.name || "")}
                           >
                             {item.title}
-                          </Link>
+                          </a>
                         </li>
                       ))}
                     </ul>
