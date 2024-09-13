@@ -4,7 +4,10 @@ import img2 from "@/assets/Frame 85.png";
 
 function Testimonials() {
   return (
-    <section className="h-auto py-10 px-4 md:px-8 overflow-hidden">
+    <section
+      id="testimonials"
+      className="h-auto py-10 px-4 md:px-8 overflow-hidden"
+    >
       <motion.div
         className="text-center flex flex-col space-y-5"
         initial={{ opacity: 0, x: -50 }}

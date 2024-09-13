@@ -35,7 +35,10 @@ const socialLinks: { id: number; icon: string; link: string }[] = [
 
 const Footer = () => {
   return (
-    <div className="w-full h-[320px] bg-secondary text-white mt-20 md:mt-40 px-4 md:px-[120px]">
+    <div
+      id="footer"
+      className="w-full h-[320px] bg-secondary text-white mt-20 md:mt-40 px-4 md:px-[120px]"
+    >
       <div className="flex md:justify-between md:items-center md:h-full flex-col-reverse md:flex-row">
         <div className="flex space-x-5 pt-5 md:pt-0">
           {socialLinks.map((link) => (

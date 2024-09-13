@@ -37,7 +37,10 @@ const cards: {
 
 const Cards = () => {
   return (
-    <div className="h-auto py-20 grid sm:grid-flow-col gap-10 sm:px-[120px] px-4 place-content-center">
+    <div
+      id="classes"
+      className="h-auto py-20 grid sm:grid-flow-col gap-10 sm:px-[120px] px-4 place-content-center"
+    >
       {cards.map((card) => (
         <motion.div
           key={card.id}

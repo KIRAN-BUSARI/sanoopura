@@ -8,7 +8,10 @@ import v5 from "@/assets/v5.png";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-[#F6F3F6] px-4 md:px-[120px] flex flex-col justify-center items-center relative">
+    <div
+      id="about"
+      className="min-h-screen bg-[#F6F3F6] px-4 md:px-[120px] flex flex-col justify-center items-center relative"
+    >
       <motion.img
         src={v3}
         alt="vector3"
