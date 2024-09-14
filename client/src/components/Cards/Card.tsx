@@ -10,7 +10,7 @@ const Card = ({
   buttonText?: string;
 }) => {
   return (
-    <div className="rounded-2xl bg-white border w-full md:max-w-[400px] drop-shadow-xl h-auto md:h-[600px] flex flex-col justify-center items-center p-5">
+    <div className="rounded-2xl bg-white border max-w-[400px] drop-shadow-xl h-auto md:h-[600px] flex flex-col justify-center items-center p-5">
       <div className="flex flex-col space-y-5">
         <div className="bg-[#E8E3E9] rounded-lg">
           <img src={imgLink} alt="card_img" />

@@ -68,7 +68,7 @@ function Gallery() {
   return (
     <>
       <div
-        className="flex flex-col justify-center items-center mt-10 md:mt-20 px-4 md:px-[120px]"
+        className="flex flex-col justify-center items-center mt-10 md:mt-20 px-4 md:px-[120px] md:pt-32 pt-20"
         id="gallery"
       >
         <div className="text-center flex flex-col space-y-5">

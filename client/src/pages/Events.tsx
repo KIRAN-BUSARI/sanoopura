@@ -72,7 +72,7 @@ const Events = () => {
   return (
     <div
       id="events"
-      className="h-auto items-center flex-col relative px-4 md:px-[60px] lg:px-[120px] py-10"
+      className="h-auto items-center flex-col relative px-4 md:px-[60px] lg:px-[120px] md:pt-32 pt-20 py-20"
     >
       <img
         src={eventImg}
