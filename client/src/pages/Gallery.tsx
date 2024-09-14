@@ -67,47 +67,48 @@ const images = [
 function Gallery() {
   return (
     <>
-      <div
-        className="flex flex-col justify-center items-center mt-10 md:mt-20 px-4 md:px-[120px] md:pt-32 pt-20"
-        id="gallery"
-      >
-        <div className="text-center flex flex-col space-y-5">
-          <h1 className="text-2xl md:text-4xl font-semibold">Gallery</h1>
-          <p className="text-sm md:text-base font-normal md:leading-6">
-            Honors for notable accomplishments, recognition of excellence in a
-            field, and milestones in personal or professional growth.
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-12 md:mt-16 flex items-center justify-center px-4 md:px-[120px]">
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8"
-          initial="hidden"
-          whileInView="visible"
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: {
-              opacity: 1,
-              x: 0,
-              transition: { staggerChildren: 0.2 },
-            },
-          }}
+      <section className="h-auto px-4 md:px-[120px] md:py-32 py-20" id="gallery">
+        <div
+          className="flex flex-col justify-center items-center "
         >
-          {images.map((image) => (
-            <motion.div
-              key={image.id}
-              variants={{
-                hidden: { opacity: 0, x: -50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-              transition={{ duration: 0.3 }}
-            >
-              <GalleryCard img={image.img} />
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
+          <div className="text-center flex flex-col space-y-5">
+            <h1 className="text-2xl md:text-4xl font-semibold">Gallery</h1>
+            <p className="text-sm md:text-base font-normal md:leading-6">
+              Honors for notable accomplishments, recognition of excellence in a
+              field, and milestones in personal or professional growth.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12 md:mt-16 flex items-center justify-center px-4 md:px-[120px]">
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8"
+            initial="hidden"
+            whileInView="visible"
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: {
+                opacity: 1,
+                x: 0,
+                transition: { staggerChildren: 0.2 },
+              },
+            }}
+          >
+            {images.map((image) => (
+              <motion.div
+                key={image.id}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ duration: 0.3 }}
+              >
+                <GalleryCard img={image.img} />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
     </>
   );
 }
