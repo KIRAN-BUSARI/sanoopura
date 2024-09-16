@@ -27,7 +27,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.p
-            className="text-xl font-medium sm:text-[32px] leading-8 sm:leading-[44px] tracking-[-1%] text-primary1 text-center sm:text-start text-balance sm:mr-24"
+            className="text-xl font-medium sm:font-normal sm:text-[32px] leading-8 sm:leading-[44px] tracking-[-1%] text-primary1 text-center sm:text-start text-balance sm:mr-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
