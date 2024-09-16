@@ -77,6 +77,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: "Poppins, sans-serif",
+        samarkan: "Samarkan, sans-serif",
       },
       textColor: {
         primary: "#313131",
