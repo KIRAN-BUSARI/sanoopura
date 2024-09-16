@@ -67,13 +67,16 @@ const images = [
 function Gallery() {
   return (
     <>
-      <section className="h-auto px-4 md:px-[120px] md:py-32 py-20" id="gallery">
-        <div
-          className="flex flex-col justify-center items-center "
-        >
+      <section
+        className="h-auto px-4 md:px-[120px] md:py-32 py-20"
+        id="gallery"
+      >
+        <div className="flex flex-col justify-center items-center">
           <div className="text-center flex flex-col space-y-5">
-            <h1 className="text-2xl md:text-4xl font-semibold">Gallery</h1>
-            <p className="text-sm md:text-base font-normal md:leading-6">
+            <h1 className="text-2xl md:text-4xl font-semibold text-left sm:text-center">
+              Gallery
+            </h1>
+            <p className="text-sm md:text-base font-normal md:leading-6 text-left sm:text-center text-balance">
               Honors for notable accomplishments, recognition of excellence in a
               field, and milestones in personal or professional growth.
             </p>

@@ -49,10 +49,10 @@ const AwardsPage = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-2xl md:text-4xl font-semibold">
+        <h1 className="text-2xl md:text-4xl font-semibold text-left sm:text-center">
           Awards & Achievements
         </h1>
-        <p className="text-sm md:text-base font-normal leading-[22px]">
+        <p className="text-sm md:text-base font-normal leading-[22px] text-left sm:text-center">
           Discover the remarkable achievements and recognition of our Indian
           classical dance artists, who have received prestigious{" "}
           <br className="hidden md:block" /> awards and accolades for their

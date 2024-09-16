@@ -31,16 +31,16 @@ const navbarItems: {
     link: "#about",
     name: "about",
   },
-  {
-    id: "5",
-    title: "team",
-    link: "#team",
-    name: "team",
-  },
+  // {
+  //   id: "5",
+  //   title: "team",
+  //   link: "#team",
+  //   name: "team",
+  // },
   {
     id: "6",
     title: "contact",
-    link: "#contact",
+    link: "#footer",
     name: "contact",
   },
 ];

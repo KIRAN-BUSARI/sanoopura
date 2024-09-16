@@ -10,15 +10,15 @@ const Card = ({
   buttonText?: string;
 }) => {
   return (
-    <div className="rounded-2xl bg-white border max-w-[400px] drop-shadow-xl h-auto md:h-[600px] flex flex-col justify-center items-center p-5">
-      <div className="flex flex-col space-y-5">
-        <div className="bg-[#E8E3E9] rounded-lg">
+    <div className="rounded-2xl bg-white border max-w-[400px] drop-shadow-xl h-auto md:h-[600px] flex flex-col justify-left items-center p-5">
+      <div className="flex flex-col space-y-2">
+        <div className="bg-[#E8E3E9] rounded-lg mb-2">
           <img src={imgLink} alt="card_img" />
         </div>
-        <h1 className="font-medium text-xl leading-[30px] text-center">
+        <h1 className="font-semibold text-xl leading-[30px] text-center">
           {title}
         </h1>
-        <div className="flex text-center text-base leading-[24px] min-h-[168px]">
+        <div className="flex text-center text-balance text-base leading-[24px] min-h-[168px]">
           {description}
         </div>
         {buttonText && (

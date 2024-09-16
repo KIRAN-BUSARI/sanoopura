@@ -17,6 +17,7 @@ export default function Hero() {
             className="w-full h-auto object-contain -ml-7 sm:-ml-14"
           />
           <div className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-heroImage mt-5 sm:mt-0 opacity-5 sm:h-[50vh] lg:h-[80vh] w-full animate-spin-slow -z-10"></div>
+          <div className="sm:hidden block gradient absolute bottom-0 -inset-x-64 bg-gradient-to-t from-white/100 pt-[30%]" />
         </motion.div>
 
         <motion.div
@@ -26,7 +27,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.p
-            className="text-xl sm:text-[32px] leading-8 sm:leading-[44px] font-light tracking-[-1%] text-primary1 text-center sm:text-start sm:mr-24"
+            className="text-xl font-medium sm:text-[32px] leading-8 sm:leading-[44px] tracking-[-1%] text-primary1 text-center sm:text-start text-balance sm:mr-24"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -60,7 +61,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <motion.button
-              className="px-4 py-2 sm:px-6 sm:py-3 bg-secondary hover:opacity-90 shadow-lg shadow-secondary/50 text-opacity-100 font-medium rounded-full sm:mr-[100px]"
+              className="px-8 py-2 sm:px-6 sm:py-3 bg-secondary hover:opacity-90 shadow-lg shadow-secondary/50 text-opacity-100 font-medium rounded-full sm:mr-[100px]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

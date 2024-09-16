@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import img1 from "@/assets/Frame 84.png";
-import img2 from "@/assets/Frame 85.png";
 
 function Testimonials() {
   return (
@@ -14,10 +12,10 @@ function Testimonials() {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-2xl md:text-4xl font-semibold">
+        <h1 className="text-2xl md:text-4xl font-semibold text-left sm:text-center">
           What they have to say
         </h1>
-        <p className="text-sm md:text-[16px] font-normal leading-6">
+        <p className="text-sm md:text-[16px] font-normal leading-6 text-left sm:text-center">
           Honors for notable accomplishments, recognition of excellence in a
           field, and milestones in personal or professional growth.
         </p>
@@ -25,15 +23,12 @@ function Testimonials() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mt-10 md:mt-16 h-auto md:h-[557px] mx-auto md:mx-20">
         <motion.div
-          className="bg-[#FBF8FB] rounded-[16px] p-6 md:p-[32px]"
+          className="bg-[#FBF8FB] rounded-[16px] p-6 md:p-[32px] flex flex-col justify-center"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12">
-            <div>
-              <img src={img1} alt="Dr Rekha" className="w-full md:w-auto" />
-            </div>
             <div className="flex flex-col justify-center">
               <h2 className="font-semibold text-[20px] md:text-[24px]">
                 Dr Rekha
@@ -68,19 +63,12 @@ function Testimonials() {
         </motion.div>
 
         <motion.div
-          className="bg-[#FBF8FB] rounded-[16px] p-6 md:p-[32px]"
+          className="bg-[#FBF8FB] rounded-[16px] p-6 md:p-[32px] flex flex-col justify-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12">
-            <div>
-              <img
-                src={img2}
-                alt="Dr Girija Ganesan"
-                className="w-full md:w-auto"
-              />
-            </div>
             <div className="flex flex-col justify-center">
               <h2 className="font-semibold text-[20px] md:text-[24px]">
                 Dr Girija Ganesan

@@ -77,11 +77,11 @@ const Events = () => {
       <img
         src={eventImg}
         alt="eventImage"
-        className="absolute right-0 -z-10 opacity-45 md:opacity-100 top-[550px] md:top-32 w-[300px]"
+        className="absolute right-0 -z-10 opacity-20 md:opacity-100 top-[550px] md:top-32 w-[300px]"
       />
 
       <motion.div
-        className="flex flex-col text-primary text-center mx-auto space-y-2 mb-10 md:mb-20"
+        className="flex flex-col text-primary sm:text-center text-left mx-auto space-y-2 mb-10 md:mb-20"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
