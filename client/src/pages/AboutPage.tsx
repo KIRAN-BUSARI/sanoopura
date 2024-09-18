@@ -1,21 +1,21 @@
-import { motion } from "framer-motion";
-import abtPageImg from "@/assets/abtPageImg.png";
-import v1 from "@/assets/v1.png";
-import v2 from "@/assets/v2bottom.png";
-import v3 from "@/assets/v3.png";
-import v4 from "@/assets/v4.png";
-import v5 from "@/assets/v5.png";
+import { motion } from 'framer-motion';
+import abtPageImg from '@/assets/abtPageImg.png';
+import v1 from '@/assets/v1.png';
+import v2 from '@/assets/v2bottom.png';
+import v3 from '@/assets/v3.png';
+import v4 from '@/assets/v4.png';
+import v5 from '@/assets/v5.png';
 
 const AboutPage = () => {
   return (
     <div
       id="about"
-      className="h-auto bg-[#F6F3F6] px-4 md:px-[120px] flex flex-col justify-center items-center relative py-20 md:py-40"
+      className="relative flex h-auto flex-col items-center justify-center bg-[#F6F3F6] px-4 py-20 md:px-[120px] md:py-40"
     >
       <motion.img
         src={v3}
         alt="vector3"
-        className="absolute top-0 right-10 md:right-60 w-20 md:w-auto"
+        className="absolute right-10 top-0 w-20 md:right-60 md:w-auto"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -23,38 +23,38 @@ const AboutPage = () => {
       <motion.img
         src={v5}
         alt="vector5"
-        className="absolute top-0 left-10 md:left-60 w-20 md:w-auto"
+        className="absolute left-10 top-0 w-20 md:left-60 md:w-auto"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 relative w-full">
+      <div className="relative grid w-full grid-cols-1 gap-10 md:grid-cols-2 md:gap-20">
         <motion.img
           src={v1}
           alt="v1"
-          className="absolute z-10 left-0 -top-[90px] overflow-hidden w-20 md:w-auto"
+          className="absolute -top-[90px] left-0 z-10 w-20 overflow-hidden md:w-auto"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         />
         <motion.div
-          className="flex justify-center items-start flex-col px-4 md:px-0"
+          className="flex flex-col items-start justify-center px-4 md:px-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-[24px] md:text-[36px] font-semibold mb-5 md:mb-10">
+          <h1 className="mb-5 text-[24px] font-semibold md:mb-10 md:text-[36px]">
             About Me
           </h1>
-          <div className="text-primary1 mb-3 md:mb-5 leading-[24px] md:leading-[30px]">
-            <p className="text-lg md:text-xl font-semibold">
+          <div className="mb-3 leading-[24px] text-primary1 md:mb-5 md:leading-[30px]">
+            <p className="text-lg font-semibold md:text-xl">
               Dr Archana S Rao <br />
-              <span className="text-[12px] md:text-[14px] font-medium text-secondary">
+              <span className="text-[12px] font-medium text-secondary md:text-[14px]">
                 MFA In dance, Ph.D In Microbiology
               </span>
             </p>
           </div>
-          <div className="text-primary1 font-normal text-sm md:text-base leading-[20px] md:leading-[24px] text-left">
+          <div className="text-left text-sm font-normal leading-[20px] text-primary1 md:text-base md:leading-[24px]">
             <p>
               Dr Archana S Rao, a true exponent of traditional Bharathanatyam,
               has an undying passion for ancient Indian art form. With an eye on
@@ -68,18 +68,18 @@ const AboutPage = () => {
           </div>
         </motion.div>
         <motion.div
-          className="flex justify-center items-center px-4 md:px-0"
+          className="flex items-center justify-center px-4 md:px-0"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <img src={abtPageImg} alt="abtpageimage" className="w-full h-auto" />
+          <img src={abtPageImg} alt="abtpageimage" className="h-auto w-full" />
         </motion.div>
       </div>
       <motion.img
         src={v2}
         alt="v2"
-        className="absolute bottom-0 overflow-hidden left-10 md:left-56 w-20 md:w-auto"
+        className="absolute bottom-0 left-10 w-20 overflow-hidden md:left-56 md:w-auto"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}

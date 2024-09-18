@@ -6,11 +6,11 @@ const AwardCard = ({
   description: string;
 }) => {
   return (
-    <div className="rounded-xl flex flex-col justify-center items-start bg-white p-5 sm:p-8 space-y-2">
-      <div className="text-secondary text-xl leading-[30px] font-semibold">
+    <div className="flex flex-col items-start justify-center space-y-2 rounded-xl bg-white p-5 sm:p-8">
+      <div className="text-xl font-semibold leading-[30px] text-secondary">
         <h1 className="">{title}</h1>
       </div>
-      <div className="text-primary1 font-normal text-base leading-[24px]">
+      <div className="text-base font-normal leading-[24px] text-primary1">
         <p>{description}</p>
       </div>
     </div>

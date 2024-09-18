@@ -1,11 +1,11 @@
 const EventBanner = () => {
   return (
-    <div className="w-full h-auto bg-secondary flex place-content-center text-white py-8 md:py-[50px] z-10">
+    <div className="z-10 flex h-auto w-full place-content-center bg-secondary py-8 text-white md:py-[50px]">
       <div className="flex flex-col justify-center space-y-4 px-4 md:px-8">
-        <h1 className="text-xl md:text-4xl sm:text-center text-balance leading-[30px] md:leading-[50px]">
+        <h1 className="text-balance text-xl leading-[30px] sm:text-center md:text-4xl md:leading-[50px]">
           Looking for Events & Performances?
         </h1>
-        <p className="text-lg md:text-2xl smtext-center text-balance leading-[24px] md:leading-[33px] font-light">
+        <p className="smtext-center text-balance text-lg font-light leading-[24px] md:text-2xl md:leading-[33px]">
           Talk to us: 9611494919 or write a mail - sanoopura@gmail.com
         </p>
       </div>

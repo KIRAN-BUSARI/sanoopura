@@ -3,26 +3,35 @@ const Card = ({
   title,
   description,
   buttonText,
+  link,
 }: {
   imgLink: string;
   title: string;
   description: string;
   buttonText?: string;
+  link?: string;
 }) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    window.open('https://wa.me/+919611494919', '_blank');
+  };
   return (
-    <div className="rounded-2xl bg-white border max-w-[400px] drop-shadow-xl h-auto md:h-[600px] flex flex-col justify-left items-center p-5">
+    <div className="justify-left flex h-auto max-w-[400px] flex-col items-center rounded-2xl border bg-white p-5 drop-shadow-xl md:h-[600px]">
       <div className="flex flex-col space-y-2">
-        <div className="bg-[#E8E3E9] rounded-lg mb-2">
+        <div className="mb-2 rounded-lg bg-[#E8E3E9]">
           <img src={imgLink} alt="card_img" />
         </div>
-        <h1 className="font-semibold text-xl leading-[30px] text-center">
+        <h1 className="text-center text-xl font-semibold leading-[30px]">
           {title}
         </h1>
-        <div className="flex text-center text-balance text-base leading-[24px] min-h-[168px]">
+        <div className="flex min-h-[168px] text-balance text-center text-base leading-[24px]">
           {description}
         </div>
         {buttonText && (
-          <button className="bg-secondary text-white px-5 py-3 rounded-full uppercase">
+          <button
+            onClick={link ? () => window.open(link, '_blank') : handleClick}
+            className="rounded-full bg-secondary px-5 py-3 uppercase text-white"
+          >
             {buttonText}
           </button>
         )}

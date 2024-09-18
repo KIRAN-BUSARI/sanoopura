@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import Card from "@/components/Cards/Card";
-import cardImg from "@/assets/CardImg.png";
+import { motion } from 'framer-motion';
+import Card from '@/components/Cards/Card';
+import cardImg from '@/assets/CardImg.png';
 
 const cards: {
   id: number;
@@ -8,30 +8,31 @@ const cards: {
   title: string;
   description: string;
   buttonText?: string;
+  link?: string;
 }[] = [
   {
     id: 1,
     imgLink: cardImg,
-    title: "Classes",
+    title: 'Classes',
     description:
-      "Bharatanatyam is a classical Indian dance form that originated in Tamil Nadu. It features intricate footwork, hand gestures, and facial expressions to tell stories from Hindu mythology and showcase Indian culture.",
-    buttonText: "Classes",
+      'Bharatanatyam is a classical Indian dance form that originated in Tamil Nadu. It features intricate footwork, hand gestures, and facial expressions to tell stories from Hindu mythology and showcase Indian culture.',
+    buttonText: 'Classes',
   },
   {
     id: 2,
     imgLink: cardImg,
-    title: "Workshops",
+    title: 'Workshops',
     description:
       "Indian contemporary dance blends classical Indian and Western styles, emphasizing expressiveness and cultural diversity. It showcases unique performances using a variety of techniques and themes, reflecting India's rich heritage.",
-    buttonText: "Workshops",
+    buttonText: 'Workshops',
   },
   {
     id: 3,
     imgLink: cardImg,
-    title: "Performances",
+    title: 'Performances',
     description:
-      "Hindustani vocal is a traditional form of Indian classical music that originated in the northern regions of the Indian subcontinent. It involves patterns and is characterized by its improvisational nature and use of vocal ornamentation.",
-    buttonText: "Performances",
+      'Hindustani vocal is a traditional form of Indian classical music that originated in the northern regions of the Indian subcontinent. It involves patterns and is characterized by its improvisational nature and use of vocal ornamentation.',
+    buttonText: 'Performances',
   },
 ];
 
@@ -39,7 +40,7 @@ const Cards = () => {
   return (
     <div
       id="classes"
-      className="h-auto py-20 grid sm:grid-flow-col gap-10 sm:px-[120px] px-4 place-content-center"
+      className="grid h-auto place-content-center gap-10 px-4 py-20 sm:grid-flow-col sm:px-[120px]"
     >
       {cards.map((card) => (
         <motion.div

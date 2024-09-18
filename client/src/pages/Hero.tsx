@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import heroImg from "../assets/heroDancerImg.png";
+import { motion } from 'framer-motion';
+import heroImg from '../assets/heroDancerImg.png';
 
 export default function Hero() {
   return (
-    <div className="h-auto sm:pt-20 py-10 sm:py-0">
-      <div className="grid sm:grid-cols-12 sm:px-[120px] gap-8">
+    <div className="h-auto py-10 sm:py-0 sm:pt-20">
+      <div className="grid gap-8 sm:grid-cols-12 sm:px-[120px]">
         <motion.div
-          className="col-span-12 sm:col-span-7 relative overflow-hidden flex justify-center"
+          className="relative col-span-12 flex justify-center overflow-hidden sm:col-span-7"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -14,20 +14,20 @@ export default function Hero() {
           <img
             src={heroImg}
             alt="dancer"
-            className="w-full h-auto object-contain -ml-7 sm:-ml-14"
+            className="-ml-7 h-auto w-full object-contain sm:-ml-14"
           />
-          <div className="absolute inset-0 bg-center bg-contain bg-no-repeat bg-heroImage mt-5 sm:mt-0 opacity-5 sm:h-[50vh] lg:h-[80vh] w-full animate-spin-slow -z-10"></div>
-          <div className="sm:hidden block gradient absolute bottom-0 -inset-x-64 bg-gradient-to-t from-white/100 pt-[30%]" />
+          <div className="absolute inset-0 -z-10 mt-5 w-full animate-spin-slow bg-heroImage bg-contain bg-center bg-no-repeat opacity-5 sm:mt-0 sm:h-[50vh] lg:h-[80vh]"></div>
+          <div className="gradient absolute -inset-x-64 bottom-0 block bg-gradient-to-t from-white/100 pt-[30%] sm:hidden" />
         </motion.div>
 
         <motion.div
-          className="col-span-12 sm:col-span-5 text-white flex flex-col justify-center sm:items-end"
+          className="col-span-12 flex flex-col justify-center text-white sm:col-span-5 sm:items-end"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: -0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.p
-            className="text-xl font-medium sm:font-normal sm:text-[32px] leading-8 sm:leading-[44px] tracking-[-1%] text-primary1 text-center sm:text-start text-balance sm:mr-24"
+            className="text-balance text-center text-xl font-medium leading-8 tracking-[-1%] text-primary1 sm:mr-24 sm:text-start sm:text-[32px] sm:font-normal sm:leading-[44px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
@@ -37,7 +37,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.h1
-            className="text-4xl sm:text-5xl leading-[50px] sm:leading-[72px] tracking-[-3%] font-semibold bg-clip-text bg-gradient-to-tr from-[#593C2E] to-[#C54783] text-transparent text-center sm:text-start"
+            className="bg-gradient-to-tr from-[#593C2E] to-[#C54783] bg-clip-text text-center text-4xl font-semibold leading-[50px] tracking-[-3%] text-transparent sm:text-start sm:text-5xl sm:leading-[72px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -46,7 +46,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-xs sm:text-sm text-primary1 leading-5 sm:leading-[21px] tracking-[-3%] text-center sm:text-start"
+            className="text-center text-xs leading-5 tracking-[-3%] text-primary1 sm:text-start sm:text-sm sm:leading-[21px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -61,7 +61,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             <motion.button
-              className="px-8 py-2 sm:px-6 sm:py-3 bg-secondary hover:opacity-90 shadow-lg shadow-secondary/50 text-opacity-100 font-medium rounded-full sm:mr-[100px]"
+              className="rounded-full bg-secondary px-8 py-2 font-medium text-opacity-100 shadow-lg shadow-secondary/50 hover:opacity-90 sm:mr-[100px] sm:px-6 sm:py-3"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

@@ -1,12 +1,12 @@
 export default function PageNotFound() {
   return (
-    <div className="h-[80vh] flex justify-center items-center">
+    <div className="flex h-[80vh] items-center justify-center">
       <div className="text-5xl font-bold">
-        <span className="text-slate-700 text-7xl flex justify-center animate-pulse">
+        <span className="flex animate-pulse justify-center text-7xl text-slate-700">
           404
         </span>
-        <h1 className="text-orange-400 flex">
-          Page Not Found <span className="animate-bounce ml-5">🧐</span>
+        <h1 className="flex text-orange-400">
+          Page Not Found <span className="ml-5 animate-bounce">🧐</span>
         </h1>
       </div>
     </div>

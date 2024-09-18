@@ -1,23 +1,23 @@
-import facebook_logo from "@/assets/ion_logo-facebook.png";
-import instagram_logo from "@/assets/ri_instagram-fill.png";
-import gmail_logo from "@/assets/basil_gmail-solid.png";
-import { Link } from "react-router-dom";
+import facebook_logo from '@/assets/ion_logo-facebook.png';
+import instagram_logo from '@/assets/ri_instagram-fill.png';
+import gmail_logo from '@/assets/basil_gmail-solid.png';
+import { Link } from 'react-router-dom';
 
 const socialLinks: { id: number; icon: string; link: string }[] = [
   {
     id: 1,
     icon: facebook_logo,
-    link: "https://www.facebook.com/chinnu.archana/",
+    link: 'https://www.facebook.com/chinnu.archana/',
   },
   {
     id: 2,
     icon: instagram_logo,
-    link: "https://www.instagram.com/sanoopura_nrityalaya/",
+    link: 'https://www.instagram.com/sanoopura_nrityalaya/',
   },
   {
     id: 5,
     icon: gmail_logo,
-    link: "mailto:sa@gmail.com",
+    link: 'mailto:sa@gmail.com',
   },
 ];
 
@@ -25,9 +25,9 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="w-full h-[320px] bg-secondary text-white px-4 md:px-[120px]"
+      className="h-[320px] w-full bg-secondary px-4 text-white md:px-[120px]"
     >
-      <div className="flex md:justify-between md:items-center md:h-full flex-col-reverse md:flex-row">
+      <div className="flex flex-col-reverse md:h-full md:flex-row md:items-center md:justify-between">
         <div className="flex space-x-5 pt-5 md:pt-0">
           {socialLinks.map((link) => (
             <Link to={link.link} target="_blank" key={link.id}>
@@ -38,10 +38,10 @@ const Footer = () => {
 
         <div className="flex flex-col space-y-8 pt-8 md:pt-0">
           <div className="space-y-2">
-            <h1 className="text-2xl md:text-[36px] font-medium font-samarkan">
+            <h1 className="font-samarkan text-2xl font-medium md:text-[36px]">
               SANOOPURA NRITYALAYA
             </h1>
-            <p className="text-sm md:text-base font-normal">
+            <p className="text-sm font-normal md:text-base">
               No 341 Sai Sparsh 2nd Floor, 8th Main Rd,
               <br className="md:hidden" /> JHCS Layout,
               <br className="hidden md:block" />

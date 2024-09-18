@@ -2,19 +2,19 @@ function Performance() {
   return (
     <section
       id="performance"
-      className="h-auto py-10 md:py-40 px-4 md:px-[120px]"
+      className="h-auto px-4 py-10 md:px-[120px] md:py-40"
     >
-      <div className="flex flex-col justify-center items-center">
-        <div className="text-left sm:text-center flex flex-col space-y-5">
-          <h1 className="text-2xl md:text-4xl font-semibold">Performance</h1>
-          <p className="text-sm md:text-[16px] font-normal md:leading-6">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col space-y-5 text-left sm:text-center">
+          <h1 className="text-2xl font-semibold md:text-4xl">Performance</h1>
+          <p className="text-sm font-normal md:text-[16px] md:leading-6">
             Exploring the grace, rhythm, and storytelling traditions of Indian
             classical dance through captivating movements, intricate footwork,
             and emotive expressions.
           </p>
         </div>
 
-        <div className="md:w-[1000px] md:h-[624px] w-[330px] h-[250px] mt-10 rounded-lg overflow-hidden">
+        <div className="mt-10 h-[250px] w-[330px] overflow-hidden rounded-lg md:h-[624px] md:w-[1000px]">
           <iframe
             width="100%"
             height="100%"
