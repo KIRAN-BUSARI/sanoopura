@@ -21,6 +21,49 @@ const socialLinks: { id: number; icon: string; link: string }[] = [
   },
 ];
 
+const footerItems: {
+  id: string;
+  title: string;
+  link: string;
+  name?: string;
+}[] = [
+  {
+    id: '1',
+    title: 'Home',
+    link: '/',
+  },
+  {
+    id: '2',
+    title: 'Gallery',
+    link: '#gallery',
+    name: 'gallery',
+  },
+  {
+    id: '3',
+    title: 'Events',
+    link: '#events',
+    name: 'events',
+  },
+  {
+    id: '4',
+    title: 'About me',
+    link: '#about',
+    name: 'about',
+  },
+  // {
+  //   id: "5",
+  //   title: "team",
+  //   link: "#team",
+  //   name: "team",
+  // },
+  {
+    id: '6',
+    title: 'contact',
+    link: '#footer',
+    name: 'contact',
+  },
+];
+
 const Footer = () => {
   return (
     <div
@@ -35,6 +78,15 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+        <>
+          <ul className="flex flex-col gap-5 text-white -mr-[400px]">
+            {footerItems.map((item) => (
+              <li key={item.id} className="capitalize">
+                <a href={item.link}>{item.title}</a>
+              </li>
+            ))}
+          </ul>
+        </>
 
         <div className="flex flex-col space-y-8 pt-8 md:pt-0">
           <div className="space-y-2">
