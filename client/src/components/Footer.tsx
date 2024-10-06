@@ -2,6 +2,7 @@ import facebook_logo from '@/assets/ion_logo-facebook.png';
 import instagram_logo from '@/assets/ri_instagram-fill.png';
 import gmail_logo from '@/assets/basil_gmail-solid.png';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const socialLinks: { id: number; icon: string; link: string }[] = [
   {
@@ -71,15 +72,20 @@ const Footer = () => {
       className="h-[320px] w-full bg-secondary px-4 text-white md:px-[120px]"
     >
       <div className="flex flex-col-reverse md:h-full md:flex-row md:items-center md:justify-between">
-        <div className="flex space-x-5 pt-5 md:pt-0">
-          {socialLinks.map((link) => (
-            <Link to={link.link} target="_blank" key={link.id}>
-              <img src={link.icon} alt={link.icon} />
-            </Link>
-          ))}
+        <div className="flex flex-col gap-5">
+          <div className="hidden md:block">
+            <Logo />
+          </div>
+          <div className="flex space-x-5 pt-5 md:pt-0">
+            {socialLinks.map((link) => (
+              <Link to={link.link} target="_blank" key={link.id}>
+                <img src={link.icon} alt={link.icon} />
+              </Link>
+            ))}
+          </div>
         </div>
         <>
-          <ul className="flex flex-col gap-5 text-white -mr-[400px]">
+          <ul className="-mr-[400px] hidden flex-col space-y-2.5 text-white md:block">
             {footerItems.map((item) => (
               <li key={item.id} className="capitalize">
                 <a href={item.link}>{item.title}</a>
